@@ -1,39 +1,123 @@
-# React Truffle Box
+# 💸 Web3 Donation App
 
-This box comes with everything you need to start using Truffle to write, compile, test, and deploy smart contracts, and interact with them from a React app.
+Aplikasi donasi berbasis blockchain menggunakan **React** dan **Web3.js**, yang memungkinkan pengguna untuk mengirim donasi Ethereum (ETH) ke smart contract di jaringan blockchain.
 
-## Installation
+---
 
-First ensure you are in an empty directory.
+## 🚀 Fitur Utama
+- 🔗 **Integrasi MetaMask** untuk autentikasi dan transaksi.
+- 💰 **Donasi langsung dengan ETH** ke smart contract.
+- 📊 **Total donasi** ditampilkan secara real-time dari blockchain.
+- 🧭 **Antarmuka sederhana** dan mudah digunakan.
 
-Run the `unbox` command using 1 of 2 ways.
+---
 
-```sh
-# Install Truffle globally and run `truffle unbox`
-$ npm install -g truffle
-$ truffle unbox react
+## 🏗️ Teknologi yang Digunakan
+- **React.js** — Framework frontend utama.
+- **Web3.js** — Library untuk koneksi dan interaksi dengan blockchain.
+- **MetaMask** — Wallet Ethereum untuk pengguna.
+- **Smart Contract (Solidity)** — Backend berbasis blockchain (alamat kontrak disesuaikan).
+
+---
+
+## ⚙️ Instalasi & Penggunaan
+
+### 1️⃣ Clone Repositori
+```bash
+git clone https://github.com/username/web3-donation-app.git
+cd web3-donation-app
+````
+
+### 2️⃣ Instal Dependensi
+
+```bash
+npm install
 ```
 
-```sh
-# Alternatively, run `truffle unbox` via npx
-$ npx truffle unbox react
+### 3️⃣ Jalankan Aplikasi
+
+```bash
+npm start
 ```
 
-Start the react dev server.
+Aplikasi akan berjalan di:
 
-```sh
-$ cd client
-$ npm start
+```
+http://localhost:3000
 ```
 
-From there, follow the instructions on the hosted React app. It will walk you through using Truffle and Ganache to deploy the `SimpleStorage` contract, making calls to it, and sending transactions to change the contract's state.
+---
 
-## FAQ
+## 🔧 Konfigurasi Kontrak Pintar
 
-- __How do I use this with Ganache (or any other network)?__
+Edit alamat kontrak di dalam file `App.jsx`:
 
-  The Truffle project is set to deploy to Ganache by default. If you'd like to change this, it's as easy as modifying the Truffle config file! Check out [our documentation on adding network configurations](https://trufflesuite.com/docs/truffle/reference/configuration/#networks). From there, you can run `truffle migrate` pointed to another network, restart the React dev server, and see the change take place.
+```javascript
+const CONTRACT_ADDRESS = "0x974e97745728b0E011eA16E2C6DABeD8C9183D12";
+```
 
-- __Where can I find more resources?__
+Pastikan file `Donation.json` berisi **ABI kontrak pintar** yang sesuai dengan smart contract yang telah kamu deploy.
 
-  This Box is a sweet combo of [Truffle](https://trufflesuite.com) and [Webpack](https://webpack.js.org). Either one would be a great place to start!
+---
+
+## 🪙 Cara Menggunakan
+
+1. Pastikan **MetaMask** sudah terinstal dan aktif di browser.
+2. Hubungkan wallet saat aplikasi dimuat.
+3. Masukkan jumlah ETH yang ingin didonasikan.
+4. Klik **Kirim Donasi**.
+5. Total donasi akan otomatis diperbarui setelah transaksi berhasil.
+
+---
+
+## 📁 Struktur Proyek
+
+```
+web3-donation-app/
+│
+├── src/
+│   ├── App.jsx
+│   ├── Donation.json      # ABI kontrak pintar
+│   └── index.js
+│
+├── package.json
+└── README.md
+```
+
+---
+
+## 🧠 Penjelasan Singkat
+
+Aplikasi ini memanfaatkan Web3.js untuk berinteraksi dengan kontrak pintar Ethereum.
+
+* Fungsi `donate()` dipanggil untuk mengirim ETH ke kontrak.
+* Fungsi `totalDonations()` membaca total donasi yang tersimpan di blockchain.
+* UI React menampilkan alamat wallet, total donasi, dan form input donasi secara real-time.
+
+---
+
+## ⚠️ Catatan Penting
+
+* Pastikan jaringan di **MetaMask** sesuai dengan jaringan tempat kontrak dideploy.
+* Jika MetaMask tidak terdeteksi, aplikasi akan menampilkan peringatan untuk menginstalnya.
+* Donasi bersifat permanen (tidak dapat dikembalikan).
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dirilis di bawah **MIT License** — silakan digunakan, dimodifikasi, dan dikembangkan lebih lanjut.
+
+---
+
+## ✨ Kontributor
+
+Dikembangkan oleh RKS3
+💬 Dukung pengembangan proyek Web3 open-source!
+
+```
+
+---
+
+Apakah kamu mau saya tambahkan juga **badge GitHub (build, license, dll)** dan **preview screenshot section** di bagian atas README agar tampilannya lebih profesional seperti proyek open source besar?
+```
