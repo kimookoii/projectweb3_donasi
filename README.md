@@ -24,8 +24,8 @@ Aplikasi donasi berbasis blockchain menggunakan **React** dan **Web3.js**, yang 
 
 ### 1️⃣ Clone Repositori
 ```bash
-git clone https://github.com/username/web3-donation-app.git
-cd web3-donation-app
+git clone https://github.com/kimookoii/projectweb3_donasi.git
+cd projectweb3_donasi
 ````
 
 ### 2️⃣ Instal Dependensi
