@@ -70,22 +70,6 @@ Pastikan file `Donation.json` berisi **ABI kontrak pintar** yang sesuai dengan s
 
 ---
 
-## 📁 Struktur Proyek
-
-```
-web3-donation-app/
-│
-├── src/
-│   ├── App.jsx
-│   ├── Donation.json      # ABI kontrak pintar
-│   └── index.js
-│
-├── package.json
-└── README.md
-```
-
----
-
 ## 🧠 Penjelasan Singkat
 
 Aplikasi ini memanfaatkan Web3.js untuk berinteraksi dengan kontrak pintar Ethereum.
