@@ -116,8 +116,3 @@ Dikembangkan oleh RKS3
 💬 Dukung pengembangan proyek Web3 open-source!
 
 ```
-
----
-
-Apakah kamu mau saya tambahkan juga **badge GitHub (build, license, dll)** dan **preview screenshot section** di bagian atas README agar tampilannya lebih profesional seperti proyek open source besar?
-```
