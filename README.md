@@ -98,5 +98,3 @@ Proyek ini dirilis di bawah **MIT License** — silakan digunakan, dimodifikasi,
 
 Dikembangkan oleh RKS3
 💬 Dukung pengembangan proyek Web3 open-source!
-
-```
